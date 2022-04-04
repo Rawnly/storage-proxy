@@ -1,18 +1,20 @@
 ## Installation
+> ⚠️ NOTE: Package not yet published.
+
 ```sh
-yarn add storage-proxy
+yarn add @rawnly/storage-proxy
 # or
-npm install storage-proxy
+npm install @rawnly/storage-proxy
 ```
 
 ## Usage
-`storage-proxy` is very simple to use. Behind it uses the `Storage` and `Proxy` api to interact with the given storage as fallback (~always).
+`@rawnly/storage-proxy` is very simple to use. Behind it uses the `Storage` and `Proxy` api to interact with the given storage as fallback (~always).
 
 Example:
 ```ts
-import createStorage from 'storage-proxy'
+import createStorage from '@rawnly/storage-proxy'
 
-declare module 'storage-proxy' {
+declare module '@rawnly/storage-proxy' {
 	interface StorageData {
 		name: string
 		age: number
